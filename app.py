@@ -7,7 +7,7 @@ import numpy as np #Image Processing
 st.title("Easy OCR - Extract Text from Images")
 
 #subtitle
-st.markdown("## Optical Character Recognition - Using `easyocr`, `streamlit` -  hosted on 🤗 Spaces")
+st.markdown("## Optical Character Recognition)
 
 #image uploader
 image = st.file_uploader(label = "Upload your image here",type=['png','jpg','jpeg'])

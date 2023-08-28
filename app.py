@@ -3,6 +3,8 @@ import streamlit as st  #Web App
 from PIL import Image #Image Processing
 import numpy as np #Image Processing 
 
+import re
+
 #title
 st.title("OCR - ML Example")
 

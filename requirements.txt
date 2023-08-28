@@ -2,4 +2,4 @@ opencv-python-headless
 numpy
 easyocr
 Pillow
-re
+regex

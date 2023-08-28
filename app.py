@@ -7,7 +7,7 @@ import numpy as np #Image Processing
 st.title("OCR - ML Example")
 
 #subtitle
-st.markdown("## Optical Character Recognition)
+st.markdown("## Optical Character Recognition")
 
 #image uploader
 image = st.file_uploader(label = "Upload your image here",type=['png','jpg','jpeg'])

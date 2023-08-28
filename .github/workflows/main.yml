@@ -15,9 +15,9 @@ jobs:
           fetch-depth: 0
       - name: add remote
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.YOLOV8_STREAMLIT }}
         run: git remote add space https://pnicewiczoig:$HF_TOKEN@huggingface.co/spaces/pnicewiczoig/mlapp
       - name: push to Hub
         env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_TOKEN: ${{ secrets.YOLOV8_STREAMLIT }}
         run: git push --force https://pnicewiczoig:$HF_TOKEN@huggingface.co/spaces/pnicewiczoig/mlapp main

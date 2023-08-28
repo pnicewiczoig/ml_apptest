@@ -16,8 +16,8 @@ jobs:
       - name: add remote
         env:
           HF_TOKEN: ${{ secrets.YOLOV8_STREAMLIT }}
-        run: git remote add space https://pnicewiczoig:$HF_TOKEN@huggingface.co/spaces/pnicewiczoig/mlapp
+        run: git remote add space https://pnicewiczoig:$HF_TOKEN@huggingface.co/spaces/pnicewiczoig/ml_deploy
       - name: push to Hub
         env:
           HF_TOKEN: ${{ secrets.YOLOV8_STREAMLIT }}
-        run: git push --force https://pnicewiczoig:$HF_TOKEN@huggingface.co/spaces/pnicewiczoig/mlapp main
+        run: git push --force https://pnicewiczoig:$HF_TOKEN@huggingface.co/spaces/pnicewiczoig/ml_deploy

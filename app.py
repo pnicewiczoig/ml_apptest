@@ -25,7 +25,7 @@ if image is not None:
     input_image = Image.open(image) #read image
     st.image(input_image) #display image
 
-    with st.spinner("🤖 AI is at Work! "):
+    with st.spinner("Please wait ... processing"):
         
 
         result = reader.readtext(np.array(input_image))
@@ -34,7 +34,9 @@ if image is not None:
 
 
         for text in result:
-            result_text.append(text[1])
+            # only output if numbers and spaces
+            if re.match("^[0-9 ]+$", text[1]):
+                result_text.append(text[1])
 
         st.write(result_text)
     st.balloons()
